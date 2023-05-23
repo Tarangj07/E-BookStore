@@ -3,11 +3,11 @@ import { ThemeProvider } from '@emotion/react';
 
 import './App.css';
 import Home from './pages/Home'
-import AboutUs from './pages/AboutUs'
+import Apple from './pages/Apple'
 import NotFound from './pages/NotFound'
-import { globalStyles } from './constants';
+// import { globalStyles } from './constants';
 import appStyle from './AppStyle.module.css';
-import Logo from './images/logo.svg'
+// import Logo from './images/logo.svg'
 import { theme } from './styles_Theme'
 
 
@@ -26,12 +26,12 @@ function App() {
       }}> */}
           <div className={appStyle.navbarStyle}>
             <Link to="/">Home</Link>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/apple">Apple</Link>
             <Link to="/notfound">Notfound</Link>
           </div>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/aboutus" element={<AboutUs />}></Route>
+            <Route path="/apple" element={<Apple />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Routes>
         </BrowserRouter>
